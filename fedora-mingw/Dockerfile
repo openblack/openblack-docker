@@ -8,7 +8,8 @@ RUN dnf -y install \
   ccache \
   cmake \
   git \
-  ninja-build
+  ninja-build && \
+  dnf clean all
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

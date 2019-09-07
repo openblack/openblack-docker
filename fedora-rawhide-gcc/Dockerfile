@@ -15,7 +15,8 @@ RUN dnf -y install \
   ninja-build \
   SDL2-devel \
   spdlog-devel \
-  wayland-devel
+  wayland-devel && \
+  dnf clean all
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
