@@ -9,7 +9,6 @@ RUN apt-get update && \
   ca-certificates \
   ccache \
   cmake \
-  libglew-dev \
   libsdl2-dev \
   libglm-dev \
   libspdlog-dev \

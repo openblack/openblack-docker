@@ -8,7 +8,6 @@ RUN dnf -y install \
   cmake \
   gcc-c++ \
   git \
-  glew-devel \
   glm-devel \
   libwayland-egl \
   mesa-libGL-devel \
