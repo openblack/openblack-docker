@@ -4,18 +4,18 @@ FROM amd64/ubuntu:rolling
 # see https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#/run
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
-  git \
-  clang \
   build-essential \
   ca-certificates \
   ccache \
+  clang \
+  curl \
+  git \
   libsdl2-dev \
   libglm-dev \
   libspdlog-dev \
   libwayland-dev \
   lsb-release \
   ninja-build
-
 
 # Install cmake 3.15.4
 RUN curl -s "https://cmake.org/files/v3.15/cmake-3.15.4-Linux-x86_64.tar.gz" | tar --strip-components=1 -xz -C /usr/local

@@ -7,11 +7,12 @@ RUN apt-get update && \
   add-apt-repository ppa:git-core/ppa && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
-  git \
-  g++ \
   build-essential \
   ca-certificates \
   ccache \
+  curl \
+  git \
+  g++ \
   libgl1-mesa-dev \
   libwayland-dev \
   lsb-release \
