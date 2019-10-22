@@ -15,6 +15,8 @@ RUN apt-get update && \
   g++ \
   libgl1-mesa-dev \
   libglm-dev \
+  libsdl2-dev \
+  libx11-dev \
   libwayland-dev \
   lsb-release \
   ninja-build \

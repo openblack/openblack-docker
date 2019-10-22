@@ -11,8 +11,9 @@ RUN apt-get update && \
   git \
   g++ \
   libglm-dev \
-  libwayland-dev \
+  libsdl2-dev \
   libx11-dev \
+  libwayland-dev \
   lsb-release \
   ninja-build
 
