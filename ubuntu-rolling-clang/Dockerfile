@@ -12,6 +12,7 @@ RUN apt-get update && \
   git \
   libglm-dev \
   libwayland-dev \
+  libx11-dev \
   lsb-release \
   ninja-build
 
