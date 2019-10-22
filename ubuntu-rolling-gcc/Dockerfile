@@ -11,7 +11,6 @@ RUN apt-get update && \
   git \
   g++ \
   libglm-dev \
-  libspdlog-dev \
   libwayland-dev \
   lsb-release \
   ninja-build
@@ -26,7 +25,7 @@ RUN mkdir /tools \
     && git clone https://github.com/Microsoft/vcpkg.git --depth 1 \ 
     && cd vcpkg \
     && ./bootstrap-vcpkg.sh --useSystemBinaries \
-    && VCPKG_FORCE_SYSTEM_BINARIES=1 ./vcpkg install --triplet x64-linux sdl2 entt
+    && VCPKG_FORCE_SYSTEM_BINARIES=1 ./vcpkg install --triplet x64-linux sdl2 spdlog entt
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
