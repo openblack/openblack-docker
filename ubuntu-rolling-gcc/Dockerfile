@@ -7,6 +7,7 @@ RUN apt-get update && \
   build-essential \
   ca-certificates \
   ccache \
+  clang-tidy \
   curl \
   git \
   g++ \

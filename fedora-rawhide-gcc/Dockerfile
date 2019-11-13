@@ -5,6 +5,7 @@ FROM amd64/fedora:rawhide
 RUN dnf -y install \
   ca-certificates \
   ccache \
+  clang \
   curl \
   gcc-c++ \
   git \

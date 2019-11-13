@@ -8,6 +8,7 @@ RUN apt-get update && \
   ca-certificates \
   ccache \
   clang \
+  clang-tidy \
   curl \
   git \
   libglm-dev \
